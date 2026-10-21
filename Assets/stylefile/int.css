@@ -36,6 +36,10 @@ html {
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     height: 20vh;
+    /* aam ydal fi overflow in right w lawno khir
+    width: 130vw;*/
+    min-width: 1260px;
+    /* tam b fadel min width 1260 px  !!   */
     background-color: #f0f0f0;
     border-bottom: 2px solid #ccc;
     font-weight: 400;    
@@ -43,9 +47,14 @@ html {
 .ss_boxi{
     margin-left: 5vw;
     display: grid;
-    grid-template-columns: repeat(3, 1.5fr);
+    grid-template-columns:  repeat(3, 1.5fr);
     grid-template-rows: repeat(1, 0.3fr);
     border: 0px solid #ccc;
+
+    /*
+    min-width: 900px;
+    */
+    min-width: 1000px;
 
     width: var(--var1_gridkamel_width);
     height: var(--var2_gridkamel_height);
@@ -70,12 +79,17 @@ html {
     border-radius: 4%;
     background-color: var(--var11_bggrid_color);
  justify-items: center;
-    align-content: center;}
+    align-content: center;
+
+}
+
 .box3{border: 1.9px dotted rgba(92, 94, 92, 0.411);
     border-radius: 4%;
     background-color: var(--var11_bggrid_color);
     justify-items: center;
-    align-content: center;}
+    align-content: center;
+
+}
 
 .box1:hover{
     transform: translateY(-10px);
@@ -148,17 +162,16 @@ html {
         grid-template-columns: repeat(1, 1.5fr);
         grid-template-rows: repeat(3, 0.3fr);
         width: 470px;
-        height: 1500px;
-        padding-bottom: 410px;
+        height: 860px;
         gap: 40px;
-
+         min-width: 440px;
     }
 
 
-    .aha1{
+    .ss_aha1{
         font-size: 18px;
     }
-    .aha2{
+    .ss_aha2{
         font-size: 14px;
     }
 }

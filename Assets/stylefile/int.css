@@ -157,7 +157,9 @@ html {
 
 @media screen and (max-width: 800px) {
 
-
+    .ss_header{
+        min-width: 540px;
+    }
     .ss_boxi{
         grid-template-columns: repeat(1, 1.5fr);
         grid-template-rows: repeat(3, 0.3fr);
